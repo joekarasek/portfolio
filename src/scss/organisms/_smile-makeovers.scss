@@ -1,0 +1,56 @@
+#section-smile-makeovers {
+  $c-smile-makeovers: #48c6da;
+  $c-copy: #575757;
+
+  background-color: #fff;
+  position: relative;
+
+  .title {
+    letter-spacing: 0;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1;
+    color: $c-smile-makeovers;
+    font-weight: 900;
+
+    &-smile {
+      font-weight: 400;
+      color: #006eb2;
+      font-family: $ff-mont;
+    }
+
+    @include font-size(73px, 60px, 45px, 50px, 30px);
+  }
+
+  .smile-makeovers__copy {
+    color: $c-copy;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-family: $ff-lato;
+    text-align: left;
+    padding-top: 0;
+
+    @include font-size(16px, 15px, 14px, 14px, 14px);
+  }
+
+  .smile-makeovers__image {
+    width: 100%;
+  }
+
+  .smile-makeovers-btn {
+    margin-bottom: 10px;
+  }
+
+  .flexbox-wrapper {
+    text-align: left;
+
+    @media (min-width: 768px) {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

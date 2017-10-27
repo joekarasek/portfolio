@@ -1,0 +1,16 @@
+#video-promo {
+  background-image: url('./../assets/videobg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .heading {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h2 {
+      color: #3a5464;
+    }
+  }
+}

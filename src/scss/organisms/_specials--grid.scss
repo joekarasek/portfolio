@@ -1,0 +1,218 @@
+//#section-specials {
+//  //background-image: url('/assets/specials-bg.jpg');
+//  background-size: cover;
+//  background-repeat: no-repeat;
+//  padding-top: 30px;
+//  padding-bottom: 60px;
+//
+//  .heading {
+//    padding-top: 10px;
+//    padding-bottom: 10px;
+//    margin-bottom: 30px;
+//
+//    &__title {
+//      margin-bottom: 10px;
+//      line-height: 1;
+//      color: #1a202a;
+//      font-weight: 900;
+//      font-family: $ff-raleway;
+//      font-style: italic;
+//    }
+//
+//    &__byline {
+//      color: #79b53d;
+//      font-family: $ff-dosis;
+//      font-weight: 700;
+//      line-height: 1;
+//      margin-bottom: 10px;
+//    }
+//
+//    &__sub-title {
+//      color: #105570;
+//      font-weight: 400;
+//      font-size: 24px;
+//      margin-bottom: 0;
+//    }
+//  }
+//
+//  .specials__card-wrapper {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: space-between;
+//  }
+//
+//  .specials-card {
+//    background-color: rgba(114, 255, 79, 0.75);
+//    text-align: center;
+//    width: 100%;
+//    position: relative;
+//    margin-bottom: 20px;
+//
+//    @media (min-width: 768px) {
+//      width: 468px;
+//
+//      &:first-child {
+//        //margin-bottom: 20px;
+//      }
+//
+//      &:nth-child(3) {
+//        position: absolute;
+//        width: 240px;
+//        top: 0;
+//        right: 0;
+//        bottom: 0;
+//
+//        .flex-wrapper {
+//          flex-direction: column;
+//          margin-bottom: 15px;
+//        }
+//
+//        .specials-card__bottom {
+//          display: flex;
+//          flex-direction: column;
+//          justify-content: space-around;
+//          height: 100%;
+//        }
+//      }
+//    }
+//
+//    @media (min-width: 992px) {
+//      width: 630px;
+//
+//      &:nth-child(3) {
+//        width: 300px;
+//      }
+//    }
+//
+//    @media (min-width: 1200px) {
+//      width: 765px;
+//
+//      &:nth-child(3) {
+//        width: 365px;
+//      }
+//    }
+//
+//    &__top {
+//      //border-bottom: 44px solid turquoise;
+//      //padding-top: 70px;
+//      //border-top-left-radius: 45px;
+//      //border-top-right-radius: 45px;
+//    }
+//
+//    &__bottom {
+//      padding: 30px 20px;
+//
+//      .flex-wrapper {
+//        display: flex;
+//        flex-direction: row;
+//        align-items: center;
+//        justify-content: center;
+//        margin-bottom: 20px;
+//      }
+//    }
+//
+//    &__cost {
+//      position: relative;
+//      color: white;
+//      font-weight: 900;
+//      font-family: $ff-raleway;
+//      font-style: italic;
+//      display: inline-block;
+//      line-height: 1;
+//      margin-bottom: 15px;
+//      padding: 0 10px;
+//
+//      @include font-size(70px, 65px, 60px, 55px, 55px);
+//
+//      &::before {
+//        content: '$';
+//        position: absolute;
+//        font-size: 35px;
+//        left: 0;
+//        top: 10px;
+//        font-family: $ff-raleway;
+//        font-weight: 900;
+//        font-style: italic;
+//      }
+//    }
+//
+//    &__savings {
+//      color: #fff;
+//      font-size: 20px;
+//      margin-bottom: 0;
+//      padding: 0 10px;
+//    }
+//
+//    &__title {
+//      font-family: $ff-raleway;
+//      font-style: italic;
+//      font-weight: 900;
+//      line-height: 1;
+//      margin-bottom: 10px;
+//      color: #fff;
+//    }
+//
+//    &__copy {
+//      color: #fff;
+//      line-height: 1.4;
+//      margin-bottom: 0;
+//
+//      @include font-size(17px, 17px, 15px, 17px, 17px);
+//    }
+//
+//    &:nth-child(1) {
+//      background-color: #08519f;
+//
+//      .specials-card__cost {
+//        color: #fff;
+//      }
+//
+//      .specials-card__savings {
+//        color: #fff;
+//      }
+//
+//      .specials-card__title {
+//        color: #fff;
+//      }
+//    }
+//
+//    &:nth-child(2) {
+//      background-color: #79b53d;
+//
+//      .specials-card__cost {
+//        color: #fff;
+//      }
+//
+//      .specials-card__savings {
+//        color: #fff;
+//      }
+//
+//      .specials-card__title {
+//        color: #fff;
+//      }
+//    }
+//
+//    &:nth-child(3) {
+//      background-color: #33addd;
+//
+//      .specials-card__cost {
+//        color: #fff;
+//      }
+//
+//      .specials-card__savings {
+//        color: #fff;
+//      }
+//
+//      .specials-card__title {
+//        color: #fff;
+//      }
+//    }
+//  }
+//
+//  //shame
+//  .card-three-codes--fix {
+//    @media (min-width: 768px) and (max-width: 991px) {
+//      font-size: 14px;
+//    }
+//  }
+//}

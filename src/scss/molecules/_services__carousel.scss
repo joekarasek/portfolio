@@ -1,0 +1,49 @@
+#section-services {
+  .services-carousel {
+    .heading {
+      h2.title {
+        color: #3a5464;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    &__carousel {
+      h5 {
+        text-align: center;
+        color: #577e93;
+        font-family: $ff-lato;
+        font-weight: 700;
+      }
+    }
+
+    .services-carousel--wrapper {
+      padding: 0 25px;
+    }
+
+    .services-carousel--image {
+      @include hover-plus();
+    }
+
+    .service-modal-wrapper {
+      padding-bottom: 30px;
+
+      h5 {
+        margin-bottom: 0;
+      }
+
+      img {
+        max-width: 200px;
+
+        @media screen and (max-width: $width-sm) {
+          display: none;
+        }
+      }
+
+      .modal-image {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

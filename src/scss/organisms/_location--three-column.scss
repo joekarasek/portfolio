@@ -1,0 +1,153 @@
+#section-location.location--three-column {
+  background-color: #4a4a4a;
+
+  .flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .column-one {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    @media screen and (max-width: $width-md) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: $width-md) and (min-width: $width-sm) {
+      padding-left: 60px;
+    }
+
+    @media screen and (max-width: $width-xs) {
+      width: 100%;
+    }
+  }
+
+  .column-two {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    @media screen and (max-width: $width-md) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: $width-md) and (min-width: $width-sm) {
+      padding-left: 60px;
+    }
+
+    @media screen and (max-width: $width-xs) {
+      width: 100%;
+    }
+  }
+
+  .google-map {
+    width: 50%;
+
+    @media screen and (max-width: $width-md) {
+      width: 100%;
+    }
+  }
+
+  #google-map5,
+  .google-map {
+    height: 400px;
+
+    @media (max-width: $width-md) {
+      height: 300px;
+    }
+  }
+
+  .doctors {
+    padding-top: 10px;
+
+    &__main {
+      color: #fff;
+      font-family: $ff-lato;
+      margin-bottom: 2px;
+      line-height: 1;
+    }
+
+    &__main--title {
+      @include font-size(22px, 18px, 18px, 17px, 16px);
+    }
+
+    &__sub {
+      color: #fff;
+      font-family: $ff-raleway;
+      font-size: 14px;
+    }
+  }
+
+  .address {
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .map-link {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 16px;
+
+    a {
+      @include link-color(white);
+    }
+  }
+
+  .hours-table {
+    color: #fff;
+
+    &__time {
+      padding-left: 15px;
+    }
+  }
+
+  .new-patient-text {
+    font-family: $ff-raleway;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .new-patient-number {
+    color: #fff;
+    font-family: $ff-lato;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .existing-patient-text {
+    color: #fff;
+    font-family: $ff-raleway;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 45px;
+  }
+
+  .existing-patient-number {
+    color: #fff;
+    font-family: $ff-lato;
+    font-size: 18px;
+  }
+
+  .location-card__btn {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: $width-lg) {
+      font-size: 15px;
+    }
+  }
+
+  .location-card__logo {
+    width: 270px;
+  }
+}

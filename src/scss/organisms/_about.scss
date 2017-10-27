@@ -1,0 +1,67 @@
+#section-about {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #dee5d9;
+
+  @media (min-width: 992px) {
+    background-image: url('/assets/doc-bio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  .heading__title {
+    color: #2e2e2e;
+    line-height: 1.5;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .btn-link {
+    padding: 0;
+    background-color: #fff;
+    color: #47c8da;
+    text-decoration: underline;
+  }
+
+  .main {
+    margin: -40px 0 0;
+
+    &__name {
+      color: #2e2e2e;
+      font-family: $ff-lato;
+      font-weight: 900;
+      margin-bottom: 10px;
+      padding-top: 20px;
+
+      @include font-size(32px, 28px, 26px, 26px, 24px);
+
+      &--title {
+        color: #2e2e2e;
+
+        @include font-size(27px, 26px, 24px, 24px, 22px);
+      }
+    }
+
+    &__copy {
+      color: #414b4d;
+      font-family: $ff-open;
+
+      @include font-size(16px, 15px, 16px, 14px, 12px);
+    }
+
+    // @media (min-width: 768px) {
+    //   margin: -40px 0;
+
+    //   &__name {
+    //     padding-top: 0;
+    //   }
+
+    //   .row {
+    //     display: flex;
+    //     align-items: center;
+    //   }
+    // }
+  }
+}

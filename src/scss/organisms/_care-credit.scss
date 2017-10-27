@@ -1,0 +1,49 @@
+#section-care-credit {
+  background-color: #d8e5eb;
+
+  .flex--wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .financing {
+    color: #5d7278;
+    width: 50%;
+    text-align: right;
+    padding-right: 15px;
+
+    .text {
+      font-family: $ff-lato;
+      font-weight: 700;
+      margin-bottom: 0;
+      color: #5d7278;
+    }
+  }
+
+  .logo {
+    padding-left: 15px;
+    width: 50%;
+  }
+
+  @media screen and (max-width: $width-md) {
+    .flex--wrapper {
+      flex-direction: column;
+    }
+
+    .financing {
+      text-align: center;
+      padding-right: 0;
+    }
+
+    .logo {
+      text-align: center;
+      padding-left: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}

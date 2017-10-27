@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+{% include '/organisms/head.twig' %}
+
+<body class="stretched">
+
+<!-- Document Wrapper
+============================================= -->
+<div id="wrapper" class="clearfix">
+
+    {% include 'organisms/header.twig' with
+    {
+    "transparent": false
+    }
+    %}
+
+    {% include 'organisms/marquee.twig' %}
+
+    <!-- Content
+  ============================================= -->
+
+
+
+        {% include 'organisms/about.twig' %}
+
+        {% include 'molecules/team__carousel.twig' %}
+
+        {% include 'organisms/specials--three-card.twig' %}
+
+
+         {% include 'organisms/reviews.twig' %}
+
+         {% include 'organisms/services.twig' %}
+
+         {% include 'organisms/insurance.twig' %}
+
+        {% include 'molecules/slab__care-credit.twig' %}
+
+        {% include 'organisms/forms.twig' %}
+
+        {% include 'organisms/location.twig' %}
+
+    </div>
+
+    <!-- Modals
+    ============================================= -->
+    {% include 'organisms/request-modal.twig' %}
+
+    <!-- Footer
+    ============================================= -->
+    {% include 'organisms/footer.twig' %}
+
+</div><!-- #wrapper end -->
+
+{% include 'organisms/foot.twig' %}
+
+</body>
+</html>

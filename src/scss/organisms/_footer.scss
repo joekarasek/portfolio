@@ -1,0 +1,77 @@
+//Overrides for Canvas
+#footer {
+  position: relative;
+  background-color: #3776a6;
+  border-top: none;
+
+  a {
+    @include link-color(#fff);
+  }
+
+  p {
+    font-weight: 400;
+    font-family: $ff-lato;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #fff;
+
+    @media screen and (max-width: $width-md) {
+      float: none;
+    }
+
+    a {
+      text-decoration: underline !important;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: $width-md) {
+    text-align: center;
+  }
+
+  .footer-padding {
+    padding: 25px;
+
+    @media (max-width: $width-md) {
+      padding: 20px;
+    }
+  }
+
+  .text {
+    @media (min-width: 768px) {
+      text-align: right;
+    }
+  }
+
+  .tyson-steele-text {
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+
+  .facebook-link {
+    margin-bottom: 20px;
+  }
+
+  .flex--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $width-sm) {
+      flex-direction: column;
+
+      .text {
+        order: 1;
+      }
+    }
+  }
+
+  .accessibility {
+    padding-left: 5px;
+  }
+}

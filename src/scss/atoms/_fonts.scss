@@ -1,0 +1,202 @@
+/* ----------------------------------------------------------------
+	Fonts
+
+	Replace your Fonts as necessary
+----------------------------------------------------------------- */
+
+body {
+  font-family: $ff-lato;
+  color: $c-black;
+  line-height: 1;
+}
+
+p {
+  font-family: $ff-lato;
+  margin-bottom: $spacing-sm;
+  font-size: 18px;
+}
+
+/// @group typography
+@mixin headings() {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2e2e2e;
+  font-family: $ff-lato;
+  font-weight: 400;
+  letter-spacing: 0.88px;
+  line-height: 1.5;
+}
+
+#logo,
+#primary-menu ul li > a {
+  @include headings();
+}
+
+//Canvas override
+.slider-caption h2 {
+  text-transform: none;
+}
+
+/* ----------------------------------------------------------------
+	You can change your Font Specific Settings here
+----------------------------------------------------------------- */
+
+/// Responsive Font Size
+/// Applies font-sizes for several breakpoints
+/// @group typography
+///	@param $xl - size above `$width-lg`
+///	@param $lg - size above `$width-md`
+///	@param $md - size above `$width-sm`
+///	@param $sm - size above `$width-xs`
+///	@param $xs - size below `$width-xs`
+@mixin font-size($xl, $lg, $md: 18px, $sm: 16px, $xs: 14px) {
+  font-size: $xl;
+
+  @media screen and (max-width: $width-lg) {
+    font-size: $lg;
+  }
+
+  @media screen and (max-width: $width-md) {
+    font-size: $md;
+  }
+
+  @media screen and (max-width: $width-sm - 1) {
+    font-size: $sm;
+  }
+
+  @media screen and (max-width: $width-xs) {
+    font-size: $xs;
+  }
+}
+
+@mixin h1() {
+  @include headings();
+  @include font-size(66px, 56px, 55px, 65px, 65px);
+}
+
+.h1,
+h1 {
+  @include h1();
+}
+
+@mixin h2() {
+  @include headings();
+  @include font-size(44px, 40px, 34px, 36px, 30px);
+}
+
+.h2,
+h2 {
+  text-transform: none;
+  font-weight: 400;
+  font-family: $ff-bree;
+  color: #2e2e2e;
+
+  @include h2();
+
+  @media (max-width: $width-xs) {
+    line-height: 1.1;
+  }
+}
+
+@mixin h3() {
+  @include headings();
+  @include font-size(32px, 30px, 27px, 28px, 22px);
+}
+
+.h3,
+h3 {
+  @include h3();
+}
+
+@mixin h4() {
+  @include headings();
+  @include font-size(28px, 26px, 24px, 24px, 22px);
+}
+
+.h4,
+h4 {
+  @include h4();
+}
+
+@mixin h5() {
+  font-weight: 400;
+
+  @include headings();
+  @include font-size(24px, 23px, 23px, 24px, 23px);
+}
+
+.h5,
+h5 {
+  @include h5();
+}
+
+@mixin h6() {
+  font-weight: 400;
+
+  @include headings();
+  @include font-size(18px, 18px, 16px, 16px, 16px);
+}
+
+.h6,
+h6 {
+  @include h6();
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+
+  @media screen and (max-width: $width-sm) {
+    font-size: 16px;
+  }
+}
+
+#logo {
+  font-size: 36px;
+  line-height: 100%;
+}
+
+.font-larger {
+  font-style: 120%;
+}
+
+.area-byline {
+  font-size: 48px;
+  margin: 150px 0;
+
+  @media screen and (max-width: $width-lg) {
+    font-size: 38px;
+  }
+
+  @media screen and (max-width: $width-md) {
+    font-size: 30px;
+    margin: 120px 0;
+  }
+
+  @media screen and (max-width: $width-sm) {
+    font-size: 26px;
+    margin: 100px 0;
+  }
+
+  @media screen and (max-width: $width-xs) {
+    font-size: 24px;
+    margin: 80px 0;
+  }
+}
+
+#section-services p,
+#section-services-two p {
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+#content p {
+  line-height: 1.5;
+}

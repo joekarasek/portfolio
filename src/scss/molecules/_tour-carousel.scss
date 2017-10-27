@@ -1,0 +1,57 @@
+.tour-carousel {
+  padding-top: 5px;
+  padding-bottom: 60px;
+  background-color: #ede9e0;
+
+  .heading {
+    padding-top: 45px;
+    padding-bottom: 30px;
+
+    &__title {
+      font-family: $ff-sanchez;
+      margin-bottom: 5px;
+    }
+
+    &__copy {
+      font-size: 20px;
+      max-width: 600px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .owl-carousel .owl-nav [class*=owl-] {
+    right: -22px;
+    background-color: #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+    width: 45px;
+  }
+
+  .owl-carousel:hover .owl-nav [class*=owl-] img {
+    transition: display 0.3s ease;
+  }
+
+  .owl-carousel .owl-nav .owl-prev {
+    left: -22px;
+  }
+
+  .owl-carousel:hover .owl-nav .owl-next {
+    right: -22px;
+  }
+
+  .owl-carousel:hover .owl-nav .owl-prev {
+    left: -22px;
+  }
+
+  .owl-carousel .owl-nav [class*=owl-]:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+    text-decoration: none;
+  }
+}

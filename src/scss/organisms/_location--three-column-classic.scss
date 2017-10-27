@@ -1,0 +1,114 @@
+.location--three-column-classic {
+  text-align: center;
+
+  .mobile-logo {
+    @media (max-width: $width-md) {
+      margin-top: -200px;
+    }
+
+    @media (max-width: $width-xs) {
+      margin-top: -150px;
+    }
+  }
+
+  .location__three-column-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: -400px;
+
+    @media (max-width: $width-md) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0;
+    }
+  }
+
+  .location__column {
+    text-align: center;
+  }
+
+  h5 {
+    @include font-size(20px, 19px, 19px, 19px, 18px);
+  }
+
+  .location {
+    &__doctor {
+      color: #338ee7;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+
+    &__doctor-sub {
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    &__address {
+      line-height: 1.2;
+    }
+
+    &__map-link {
+      color: #ec008c;
+      text-decoration: underline;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    &__fax {
+      font-family: $ff-lato;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    &__hours-header {
+      color: #338ee7;
+      margin-bottom: 10px;
+    }
+
+    &__hours-table {
+      font-size: 18px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .hours-table__time {
+        text-align: left;
+        padding-left: 20px;
+      }
+    }
+
+    &__column--two {
+      .new-patient-text {
+        margin-bottom: 0;
+        line-height: 1;
+      }
+
+      .new-patient-phone {
+        color: #ec008c;
+        font-family: $ff-lato;
+        font-weight: 700;
+        line-height: 1;
+      }
+
+      .existing-patient-text {
+        margin-bottom: 0;
+        line-height: 1;
+      }
+
+      .existing-patient-phone {
+        font-weight: 700;
+        font-family: $ff-lato;
+      }
+    }
+
+    &__btn-wrapper {
+      margin-bottom: 30px;
+    }
+
+    &__column {
+      @media (min-width: $width-md) {
+        width: 30%;
+      }
+    }
+  }
+}

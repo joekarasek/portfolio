@@ -1,0 +1,33 @@
+@include social-media-link('facebook');
+@include social-media-link('yelp');
+@include social-media-link('instagram');
+@include social-media-link('youtube');
+@include social-media-link('google-plus');
+
+.si-youtube:hover,
+.si-colored.si-youtube {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+}
+
+// .social-icon {
+//   height: 42px;
+
+//   img {
+//     max-width: 32px;
+//   }
+// }
+
+#footer .si-facebook:hover,
+.si-colored.si-facebook {
+  background: none !important;
+}
+
+#footer .si-vimeo:hover,
+.si-colored.si-vimeo {
+  background: none !important;
+}

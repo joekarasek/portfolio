@@ -1,0 +1,22 @@
+.section-logo-slab {
+  .logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .logo {
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+
+    @media (min-width: $width-xs) {
+      width: 50%;
+    }
+
+    @media (min-width: $width-md + 1) {
+      width: auto;
+    }
+  }
+}

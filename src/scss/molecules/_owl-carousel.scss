@@ -1,0 +1,55 @@
+$offset: -5px;
+
+.owl-carousel .owl-nav [class*=owl-] {
+  position: absolute;
+  top: 50%;
+  //margin-top: -30px;
+  right: $offset;
+  zoom: 1;
+  width: 55px;
+  height: 55px;
+  line-height: 32px;
+  color: $c-white;
+  background-color: rgba($c-black, 0);
+  border: none;
+  font-size: 32px;
+  border-radius: 0;
+  transition: all 0.3s ease;
+
+  & [class*=icon-] {
+    font-size: 32px;
+  }
+
+  img {
+    @include vertical-center;
+  }
+}
+
+.owl-carousel:hover .owl-nav [class*=owl-] img {
+  //display: block;
+  transition: display 0.3s ease;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+  left: $offset;
+}
+
+.owl-carousel:hover .owl-nav .owl-next {
+  left: auto;
+  right: $offset;
+}
+
+.owl-carousel:hover .owl-nav .owl-prev {
+  left: $offset;
+}
+
+.owl-carousel .owl-nav [class*=owl-]:hover {
+  background-color: rgba($c-black, 0) !important;
+  color: $c-white !important;
+  text-decoration: none;
+}
+
+.carousel-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}

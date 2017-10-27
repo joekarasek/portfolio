@@ -1,0 +1,81 @@
+.services__pyramid-grid {
+  padding-top: 45px;
+  padding-bottom: 30px;
+  //override bootstrap grid gutters
+  .col-sm-4,
+  .col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  //Styling for title over bottom of card
+  .service-card {
+    display: block;
+    text-align: center;
+    position: relative;
+    padding: 0 10px;
+    margin-bottom: 30px;
+
+    &__image-link {
+      position: relative;
+      width: 100%;
+      display: block;
+    }
+
+    &__title {
+      display: block;
+      color: #183163;
+      font-weight: 400;
+      line-height: 1.1;
+      margin-bottom: 5px;
+
+      @include link-color(#1d5575);
+      @include font-size(32px, 29px, 22px, 29px, 22px);
+    }
+
+    &__learn-more {
+      font-family: $ff-open;
+      font-style: italic;
+      display: block;
+      color: #f06223;
+      font-weight: 600;
+      line-height: 1;
+      text-decoration: underline;
+      margin-bottom: 0;
+
+      @include link-color(#f06223);
+      @include font-size(18px, 14px, 17px, 15px, 14px);
+    }
+
+    &__copy {
+      background-color: rgba(255, 255, 255, 0.85);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: left;
+      padding: 10px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .service-card {
+      padding-right: 20px;
+    }
+
+    .service-card:hover {
+      .service-card__image-link {
+        @include hover-plus();
+      }
+
+      .service-card__title {
+        text-decoration: underline;
+      }
+    }
+  }
+}

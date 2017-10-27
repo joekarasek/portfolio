@@ -1,0 +1,150 @@
+// //.location-card {
+// //  background: $c-white;
+// //  margin: 30px 0;
+// //  @media (max-width: $width-md) {
+// //    margin-bottom: 5px;
+// //    margin-top: 0px;
+// //    background-color: rgba(255, 255, 255, 0);
+// //    padding-left: 0;
+// //    padding-right: 0;
+// //  }
+// //
+// //  &__logo {
+// //    &--wrapper {
+// //      background-color: #323437;
+// //      text-align: center;
+// //      padding-top: 10px;
+// //      padding-bottom: 10px;
+// //      @media (max-width: $width-md) {
+// //        background: none;
+// //      }
+// //    }
+// //    max-height: 115px;
+// //  }
+// //
+// //  &__content {
+// //    text-align: center;
+// //    padding-left: 10px;
+// //    padding-right: 10px;
+// //  }
+// //    &__doctor {
+// //      color: #5a710d;
+// //      font-family: $ff-mont;
+// //      margin-bottom: 0;
+// //      margin-top: 10px;
+// //    }
+// //    &__doctor-sub {
+// //      color: #444444;
+// //    }
+// //    &__address {
+// //      color: #444444;
+// //    }
+// //    &__map-link {
+// //      color: #5a710d;
+// //      text-decoration: underline;
+// //    }
+// //    &__new-patient-text {
+// //      font-size: 21px;
+// //      margin-bottom: 0;
+// //      line-height: 1.0;
+// //    }
+// //    &__new-patient-number {
+// //      display: block;
+// //      font-size: 44px;
+// //      @include font-size(44px, 42px, 40px, 38px, 36px);
+// //      font-family: $ff-roboto-condensed;
+// //      font-weight: 700;
+// //      color: #595955;
+// //      margin-bottom: 25px;
+// //      line-height: 1;
+// //      &:hover {
+// //        color: #595955;
+// //        text-decoration: none;
+// //      }
+// //    }
+// //    &__existing-patient-text {
+// //      margin-top: 30px;
+// //      line-height: 1;
+// //      margin-bottom: 0;
+// //    }
+// //    &__existing-patient-number {
+// //      font-size: 21px;
+// //      font-weight: 700;
+// //      line-height: 1;
+// //      margin-bottom: 30px;
+// //      color: #595955;
+// //      &:hover {
+// //        color: #595955;
+// //        text-decoration: none;
+// //      }
+// //    }
+// //    .hours-table {
+// //      h5 {
+// //        font-weight: 700;
+// //        font-family: $ff-mont;
+// //        color: #5a710d;
+// //      }
+// //      tbody {
+// //        margin-left: auto;
+// //        margin-right: auto;
+// //      }
+// //    }
+// //}
+
+// #content .floating-card {
+//   position: absolute;
+//   z-index: 10;
+//   width: 100%;
+
+//   @media (max-width: $width-md) {
+//     padding-left: 0;
+//     padding-right: 0;
+//     position: static;
+//     text-align: center;
+//     width: 100% !important;
+//     margin-left: 0;
+//     background-color: $c-white;
+//   }
+
+//   .align-fix {
+//     margin-left: -8px;
+
+//     @media (max-width: $width-md) {
+//       margin-left: 0;
+//     }
+//   }
+// }
+
+// .hours-table {
+//   //color: $c-grey-location;
+//   // padding-bottom: $spacing-md;
+
+//   h5 {
+//     //color: $c-dark-brown;
+//     font-family: $ff-lato;
+//     font-weight: 900;
+//     margin-bottom: 0;
+//     margin-top: 10px;
+//   }
+
+//   th {
+//     width: 1px;
+//     white-space: nowrap;
+//     padding-right: 20px;
+//     text-align: left;
+//   }
+
+//   td {
+//     text-align: left;
+//     padding-left: 15px;
+//   }
+
+//   table {
+//     max-width: 250px;
+//     margin: 0 auto 15px;
+
+//     @media (max-width: $width-md) {
+//       margin-left: auto;
+//     }
+//   }
+// }

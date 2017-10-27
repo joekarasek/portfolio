@@ -1,0 +1,83 @@
+#section-services {
+  text-align: left;
+  padding-bottom: 30px;
+
+  .services {
+    &__heading {
+      margin-bottom: 0;
+      margin-top: 25px;
+    }
+  }
+
+  .card__text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 30px;
+    padding: 10px 0;
+  }
+
+  .feature__title {
+    color: #fff;
+    font-family: $ff-bree;
+    margin-bottom: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+    @include font-size(44px, 34px, 30px, 22px, 20px);
+  }
+
+  .card {
+    margin-bottom: 20px;
+
+    &__title {
+      color: #fff;
+      font-family: $ff-bree;
+      line-height: 1;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+      @include font-size(34px, 24px, 20px, 22px, 20px);
+    }
+  }
+
+  .hr {
+    margin: 5px;
+    width: 190px;
+
+    @media (min-width: 768px) {
+      width: 340px;
+    }
+
+    @media (min-width: 992px) {
+      width: 390px;
+    }
+
+    @media (min-width: 1201px) {
+      width: 500px;
+    }
+  }
+
+  .card__link {
+    text-decoration: underline !important;
+    font-style: italic;
+    font-weight: 700;
+    color: #8cd211;
+    margin-bottom: 0;
+
+    @include font-size(17px, 16px, 14px, 15px, 14px);
+  }
+
+  .card__image--fix {
+    @media screen and (min-width: 768px) {
+      height: 228.5px;
+    }
+
+    @media screen and (min-width: 992px) {
+      height: 300px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      height: 364.5px;
+    }
+  }
+}

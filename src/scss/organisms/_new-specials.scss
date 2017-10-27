@@ -1,0 +1,164 @@
+//#section-specials {
+//
+//  background:url('/assets/offers-bkgd.jpg');
+//  background-size:cover;
+//  padding:50px 0;
+//  background-repeat:no-repeat;
+//  background-position: center top;
+//  @media (max-width: 991px) {
+//    background:#ffffff;
+//    padding-bottom:0;
+//  }
+//
+//  .heading  {
+//    text-align: center;
+//    padding-top: 30px;
+//    padding-bottom: 30px;
+//    @media (max-width: $width-md) {
+//      text-align: center;
+//    }
+//    .title {
+//      color: #008CBA;
+//      font-family: $ff-sanchez;
+//      font-weight: 700;
+//      margin-bottom: 5px;
+//      line-height: 1.1;
+//      @include font-size(60px,
+//              54px,
+//              48px,
+//              35px,
+//              35px);
+//    }
+//    .sub-title {
+//      color: #000000;
+//      line-height: 1;
+//      font-size: 24px;
+//      font-weight: 700;
+//      margin-top: 15px;
+//      margin-bottom: 15px;
+//    }
+//    .sub-title-two {
+//      color: #595955;
+//      line-height: 1;
+//      margin-bottom: 20px;
+//      font-weight: 400;
+//    }
+//  }
+//
+//
+//  .offer-card {
+//    display: flex;
+//    flex-wrap: nowrap;
+//    flex-direction: row;
+//    align-items: center;
+//    padding-top: 30px;
+//    padding-bottom: 30px;
+//    //border-top: 1px solid #979797;
+//    &:last-child {
+//      //border-bottom: 1px solid #979797;
+//    }
+//    @media (max-width: $width-md) {
+//      flex-direction: column;
+//    }
+//
+//    &__price-wrapper {
+//      position: relative;
+//      display: flex;
+//      flex-direction: column;
+//      align-items: center;
+//      justify-content: center;
+//      height: 145px;
+//      width: 145px;
+//      border-radius: 99999px;
+//      @media (max-width: 991px) {
+//        margin-bottom: 30px;
+//      }
+//    }
+//      &__price {
+//        color: #ffffff;
+//        font-weight: 700;
+//        font-size: 72px;
+//        margin-bottom: 0;
+//        line-height: 1;
+//        margin-left: 20px;
+//      }
+//      &__price:before {
+//        color: #ffffff;
+//        content: '$';
+//        font-weight: 700;
+//        position: absolute;
+//        left: 10px;
+//        top: 40px;
+//        font-size: 35px;
+//      }
+//      &__price-sub {
+//        color: #ffffff;
+//        margin-bottom: 0;
+//        line-height: 1;
+//      }
+//
+//
+//    &__text-wrapper {
+//      flex-shrink: 99999;
+//      padding-left: 15px;
+//      @media (max-width: $width-md) {
+//        padding-left: 0;
+//        max-width: 482px;
+//      }
+//    }
+//      &__title {
+//        line-height: 1;
+//        margin-bottom: 10px;
+//        font-size: 24px;
+//        font-weight: 700;
+//      }
+//      &__copy {
+//        color: #000000;
+//        line-height: 1.5;
+//        margin-bottom: 10px;
+//        font-size: 18px;
+//      }
+//      &__codes {
+//        color: #000000;
+//        margin-bottom: 40px;
+//        text-align: right;
+//        font-size: 18px;
+//      }
+//      &__free {
+//        color: #ffffff;
+//        font-size: 40px;
+//        margin-bottom: 0;
+//      }
+//
+//
+//    //Coloring for offer cards
+//    $card-one: #AA422F;
+//    $card-two: #016E92;
+//    $card-three: #3B5615;
+//    &:nth-child(2) {
+//      .offer-card__price-wrapper {
+//        background-color: $card-one;
+//      }
+//      .offer-card__title {
+//        color: $card-one;
+//      }
+//    }
+//    &:nth-child(3) {
+//      .offer-card__price-wrapper {
+//        background-color: $card-two;
+//      }
+//      .offer-card__title {
+//        color: $card-two;
+//      }
+//    }
+//    &:nth-child(4) {
+//      .offer-card__price-wrapper {
+//        background-color: $card-three;
+//      }
+//      .offer-card__title {
+//        color: $card-three;
+//      }
+//    }
+//  }
+//
+//}

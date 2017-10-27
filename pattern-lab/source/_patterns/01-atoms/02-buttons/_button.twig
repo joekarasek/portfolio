@@ -1,0 +1,6 @@
+{% set classes = [
+  'btn',
+  primary ? 'btn--primary',
+]|merge(classes|default([])) %}
+
+<a href="{{ url }}" class="{{ classes | join(' ') }}">{{ text }}</a>

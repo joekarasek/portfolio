@@ -1,0 +1,19 @@
+#section-healthgrades-slab {
+  background-color: #cce8ef;
+  padding: 50px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text {
+    color: #282828;
+    font-family: $ff-open;
+    margin-bottom: 0;
+    padding-right: 25px;
+
+    @include font-size(24px, 23px, 23px, 19px, 16px);
+  }
+}

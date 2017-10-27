@@ -1,0 +1,23 @@
+#section-care-credit-slab {
+  background-color: #e6f3fb;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  text-align: center;
+
+  .care-credit-slab {
+    &__copy {
+      margin-bottom: 0;
+      // color: #4e4e4e;
+    }
+
+    &__logo {
+      margin: 15px;
+    }
+
+    &__btn {
+      margin: 15px;
+      padding: 10px 70px;
+      // border: solid 2px #48c6da;
+    }
+  }
+}

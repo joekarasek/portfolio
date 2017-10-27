@@ -1,0 +1,169 @@
+.nav-grid {
+  &__section-wrapper {
+    background-color: #f5f4f2;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .ng__item {
+    display: inline-block;
+    line-height: 1;
+    transition: background-image 0.5s ease;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f5f4f2;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #ng__family-dentistry {
+    background-image: url('/assets/grid/family.jpg');
+    height: 450px;
+    width: 100%;
+  }
+
+  #ng__meet-the-doctor {
+    background-image: url('/assets/grid/doc-mobile.jpg');
+    height: 450px;
+    width: 100%;
+  }
+
+  #ng__insurance {
+    background-image: url('/assets/grid/membership.jpg');
+    height: 200px;
+    width: 100%;
+  }
+
+  #ng__reviews {
+    background-image: url('/assets/grid/reviews.jpg');
+    height: 200px;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    height: 362px;
+
+    .ng__item {
+      margin: 0;
+    }
+
+    #ng__family-dentistry {
+      width: 240px;
+      height: 362px;
+
+      &:hover {
+        background-image: url('/assets/grid/family_roll.jpg');
+      }
+    }
+
+    #ng__meet-the-doctor {
+      background-image: url('/assets/grid/doc.jpg');
+      width: 487px;
+      height: 175px;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &:hover {
+        background-image: url('/assets/grid/doc_roll.jpg');
+      }
+    }
+
+    #ng__insurance {
+      width: 230px;
+      height: 155px;
+      position: absolute;
+      bottom: 0;
+      left: auto;
+      right: auto;
+      margin-left: 23px;
+
+      &:hover {
+        background-image: url('/assets/grid/membership-roll.jpg');
+      }
+    }
+
+    #ng__reviews {
+      width: 230px;
+      height: 155px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      &:hover {
+        background-image: url('/assets/grid/reviews-roll.jpg');
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    height: 454px;
+
+    #ng__family-dentistry {
+      width: 300px;
+      height: 454px;
+    }
+
+    #ng__meet-the-doctor {
+      width: 631px;
+      height: 227px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    #ng__insurance {
+      width: 300px;
+      height: 200px;
+      position: absolute;
+      bottom: 0;
+      left: auto;
+      right: auto;
+      margin-left: 38px;
+    }
+
+    #ng__reviews {
+      width: 300px;
+      height: 200px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    height: 552px;
+
+    #ng__family-dentistry {
+      width: 365px;
+      height: 552px;
+    }
+
+    #ng__meet-the-doctor {
+      width: 768px;
+      height: 276px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    #ng__insurance {
+      width: 365px;
+      height: 244px;
+      position: absolute;
+      bottom: 0;
+      left: auto;
+      right: auto;
+      margin-left: 38px;
+    }
+
+    #ng__reviews {
+      width: 365px;
+      height: 244px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

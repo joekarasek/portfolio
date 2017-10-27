@@ -1,0 +1,96 @@
+.tour {
+  // background-image: url(/assets/tour-bg.jpg);
+  background-color: #e7fcff;
+  background-size: cover;
+  background-position: top center;
+  color: #fff;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  position: relative;
+
+  .owl-carousel .owl-nav [class*=owl-],
+  .owl-carousel:hover .owl-nav .owl-next {
+    opacity: 1;
+  }
+
+  .heading {
+    margin-bottom: 25px;
+
+    &__title {
+      color: #48c6da;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    &__copy {
+      line-height: 1.5;
+    }
+  }
+
+  &__video-wrapper {
+    padding: 30px 15px;
+
+    @media (min-width: 768px) {
+      padding: 30px 45px;
+    }
+
+    @media (min-width: 768px) {
+      padding: 45px 60px;
+    }
+  }
+
+  .full-width-wrapper {
+    position: relative;
+  }
+
+  &--full-width,
+  .owl-carousel {
+    position: static !important;
+  }
+
+  .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  img {
+    max-height: 187px !important;
+    width: auto !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 550px) {
+    img {
+      max-height: 293px !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    img {
+      max-height: 480px !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    img {
+      max-height: 627px !important;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    img {
+      max-height: 667px !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      width: inherit !important;
+    }
+  }
+}

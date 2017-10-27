@@ -1,0 +1,289 @@
+//.services-grid {
+//  &__section-wrapper {
+//    background-color: #f5f4f2;
+//    padding-top: 45px;
+//    padding-bottom: 45px;
+//
+//    .heading {
+//      padding-bottom: 20px;
+//
+//      &__title {
+//        color: #1a202a;
+//        font-family: $ff-raleway;
+//        font-weight: 900;
+//        font-style: italic;
+//        margin-bottom: 10px;
+//        line-height: 1;
+//      }
+//
+//      &__byline {
+//        color: #1a202a;
+//        font-family: $ff-dosis;
+//        font-weight: 700;
+//        font-size: 24px;
+//        margin-bottom: 0;
+//      }
+//    }
+//  }
+//
+//  &__item {
+//    display: inline-block;
+//    line-height: 1;
+//    transition: background-image 0.5s ease;
+//    background-size: cover;
+//    background-repeat: no-repeat;
+//    background-position: center center;
+//    background-color: #f5f4f2;
+//    margin-top: 15px;
+//    margin-bottom: 15px;
+//  }
+//
+//  #services-grid__family-dentistry {
+//    background-image: url('/assets/services-grid/family-care-mobile.jpg');
+//    height: 450px;
+//    width: 100%;
+//  }
+//
+//  #services-grid__cerec {
+//    background-image: url('/assets/services-grid/cerec.jpg');
+//    height: 450px;
+//    width: 100%;
+//  }
+//
+//  #services-grid__dental-implants {
+//    background-image: url('/assets/services-grid/implants.jpg');
+//    height: 200px;
+//    width: 100%;
+//  }
+//
+//  #services-grid__invisalign {
+//    background-image: url('/assets/services-grid/invisalign.jpg');
+//    height: 200px;
+//    width: 100%;
+//  }
+//
+//  #services-grid__cosmetic,
+//  #services-grid__cosmetic--two {
+//    background-image: url('/assets/services-grid/cosmetic-mobile.jpg');
+//    height: 450px;
+//    width: 100%;
+//  }
+//
+//  #services-grid__dentures {
+//    background-image: url('/assets/services-grid/cosmetic-dentures.jpg');
+//    height: 200px;
+//    width: 100%;
+//  }
+//
+//  #services-grid__sleep {
+//    background-image: url('/assets/services-grid/sleep-apnea.jpg');
+//    height: 200px;
+//    width: 100%;
+//  }
+//
+//  @media (min-width: 550px) {
+//    #services-grid__family-dentistry {
+//      height: 710px;
+//    }
+//
+//    #services-grid__cerec {
+//      height: 710px;
+//    }
+//
+//    #services-grid__dental-implants {
+//      height: 310px;
+//    }
+//
+//    #services-grid__invisalign {
+//      height: 310px;
+//    }
+//
+//    #services-grid__cosmetic,
+//    #services-grid__cosmetic--two {
+//      height: 710px;
+//    }
+//
+//    #services-grid__dentures {
+//      height: 310px;
+//    }
+//
+//    #services-grid__sleep {
+//      height: 310px;
+//    }
+//  }
+//
+//  @media (min-width: 768px) {
+//    #services-grid__family-dentistry {
+//      background-image: url('/assets/services-grid/family-care.jpg');
+//      width: 491px;
+//      height: 350px;
+//      transition: background-image 0.5s ease;
+//
+//      &:hover {
+//        background-image: url('/assets/services-grid/family-care-roll.jpg');
+//      }
+//    }
+//
+//    #services-grid__cerec {
+//      width: 234px;
+//      height: 350px;
+//      position: absolute;
+//      top: 0;
+//      right: 0;
+//      transition: background-image 0.5s ease;
+//
+//      &:hover {
+//        background-image: url('/assets/services-grid/cerec-roll.jpg');
+//      }
+//    }
+//
+//    #services-grid__dental-implants {
+//      width: 234px;
+//      height: 156px;
+//      transition: background-image 0.5s ease;
+//
+//      &:hover {
+//        background-image: url('/assets/services-grid/implants-roll.jpg');
+//      }
+//    }
+//
+//    #services-grid__invisalign {
+//      width: 234px;
+//      height: 156px;
+//      margin-left: 22px;
+//      transition: background-image 0.5s ease;
+//
+//      &:hover {
+//        background-image: url('/assets/services-grid/invisalign-roll.jpg');
+//      }
+//    }
+//
+//    #services-grid__cosmetic,
+//    #services-grid__cosmetic--two {
+//      background-image: url('/assets/services-grid/wide-cosmetic.jpg');
+//      width: 491px;
+//      height: 156px;
+//      position: absolute;
+//      right: 0;
+//      transition: background-image 0.5s ease;
+//
+//      &:hover {
+//        background-image: url('/assets/services-grid/wide-cosmetic-roll.jpg');
+//      }
+//    }
+//
+//    #services-grid__dentures {
+//      width: 234px;
+//      height: 156px;
+//      position: absolute;
+//      right: 0;
+//      transition: background-image 0.5s ease;
+//
+//      &:hover {
+//        background-image: url('/assets/services-grid/cosmetic-dentures-roll.jpg');
+//      }
+//    }
+//
+//    #services-grid__sleep {
+//      width: 234px;
+//      height: 156px;
+//      transition: background-image 0.5s ease;
+//
+//      &:hover {
+//        background-image: url('/assets/services-grid/sleep-apnea-roll.jpg');
+//      }
+//    }
+//  }
+//
+//  @media (min-width: 992px) {
+//    #services-grid__family-dentistry {
+//      width: 635px;
+//      height: 456px;
+//    }
+//
+//    #services-grid__cerec {
+//      width: 303px;
+//      height: 456px;
+//      position: absolute;
+//      top: 0;
+//      right: 0;
+//    }
+//
+//    #services-grid__dental-implants {
+//      width: 303px;
+//      height: 200px;
+//    }
+//
+//    #services-grid__invisalign {
+//      width: 303px;
+//      height: 200px;
+//      margin-left: 22px;
+//    }
+//
+//    #services-grid__cosmetic,
+//    #services-grid__cosmetic--two {
+//      width: 635px;
+//      height: 200px;
+//      position: absolute;
+//      right: 0;
+//    }
+//
+//    #services-grid__dentures {
+//      width: 303px;
+//      height: 200px;
+//      position: absolute;
+//      right: 0;
+//    }
+//
+//    #services-grid__sleep {
+//      width: 303px;
+//      height: 200px;
+//    }
+//  }
+//
+//  @media (min-width: 1200px) {
+//    #services-grid__family-dentistry {
+//      width: 768px;
+//      height: 552px;
+//    }
+//
+//    #services-grid__cerec {
+//      width: 366px;
+//      height: 552px;
+//      position: absolute;
+//      top: 0;
+//      right: 0;
+//    }
+//
+//    #services-grid__dental-implants {
+//      width: 366px;
+//      height: 244px;
+//    }
+//
+//    #services-grid__invisalign {
+//      width: 366px;
+//      height: 244px;
+//      margin-left: 34px;
+//    }
+//
+//    #services-grid__cosmetic,
+//    #services-grid__cosmetic--two {
+//      width: 768px;
+//      height: 244px;
+//      position: absolute;
+//      right: 0;
+//    }
+//
+//    #services-grid__dentures {
+//      width: 366px;
+//      height: 244px;
+//      position: absolute;
+//      right: 0;
+//    }
+//
+//    #services-grid__sleep {
+//      width: 366px;
+//      height: 244px;
+//    }
+//  }
+//}

@@ -1,0 +1,38 @@
+.service-list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__item {
+    list-style: none;
+    clear: both;
+
+    h5 {
+      margin-bottom: -12px;
+      line-height: 1;
+      margin-top: 0;
+      padding-top: 8px;
+    }
+
+    p {
+      list-style: none;
+      font-size: 21px;
+      font-family: $ff-crimson;
+      margin-bottom: 0;
+      line-height: 1.1;
+    }
+
+    .icon-ok-sign {
+      float: left;
+      margin-right: 10px;
+      font-size: 24px;
+      color: #118e94;
+    }
+
+    a:hover {
+      .icon-ok-sign {
+        color: #22bbc3;
+        transition: color 0.3s ease;
+      }
+    }
+  }
+}
