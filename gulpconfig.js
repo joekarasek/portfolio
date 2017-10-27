@@ -76,9 +76,10 @@ module.exports = {
     lint: true,
     twig: {
       enabled: true,
-      baseDir: 'src/_patterns/',
+      baseDir: 'src/_patterns',
       dataSrc: [
-        'src/_data/data.json',
+        'src/_data/data.json' +
+        '',
       ],
     },
   },
