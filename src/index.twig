@@ -2,9 +2,12 @@
 
     {% include '/organisms/navbar/navbar.twig' %}
 
-    <section class="section about" id="about">
-        <div class="container">
-            <h1 class="heading">About Me</h1>
+<section class="section about" id="about">
+    <div class="container">
+        <div class="section__heading">
+            <h2 class="heading">About Me</h2>
+        </div>
+        <div class="section__content">
             <p>Hi! I'm a full-stack web developer based out of Portland, Oregon. I've built tons of websites and
                 webapps, I strive to write high-quality, professional code, and I love being part of the developer
                 community. Whether its modern, responsive front-end, the newest Javascript library, a PHP CMS, or Python
@@ -18,6 +21,64 @@
             <p>Checkout some of the work I've done in the projects section, visit my LinkedIn and GitHub pages, and feel
                 free to reach out to me if there is anything I can do for you.</p>
         </div>
-    </section>
+    </div>
+</section>
+
+<section class="section portfolio" id="portfolio">
+    <div class="container">
+        <div class="section__heading">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="section__content">
+
+            <article class="project">
+                <h3 class="project__title">Tyson Steele</h3>
+                <h4 class="project__sub-title">Developer</h4>
+                <p class="project__description">Tyson Steele does online marketing for hundreds of dentists across the
+                    US. As a developer on this project, I am responsible for turning markups into fully responsive
+                    websites, hosting the sites on a development server, assuring quality, and delivering the product on
+                    a tight schedule (one to two sites per week).</p>
+                <h5 class="list__title">Accomplishments</h5>
+                <ul>
+                    <li>Delivered over 60 websites in the course of 15 months</li>
+                    <li>Created development tools to streamline production (see my Joe's Gulp Tools project)</li>
+                    <li>Automated deployment to Webfaction using Python</li>
+                    <li>Created a rigorous QA process to assure error free websites</li>
+                </ul>
+            </article>
+
+            <article class="project">
+                <h3 class="project__title">Tyson Steele</h3>
+                <h4 class="project__sub-title">Project Manager/Tech Lead</h4>
+                <p class="project__description">Tyson Steele does online marketing for hundreds of dentists across the
+                    US. As the project manager, I am responsible tracking project resources, accounting, delivering
+                    sites, and communicating with the client. As technical lead, I am responsible for conducting quality assurance, providing technical guidance to junior developers, </p>
+                <h5 class="list__title">Accomplishments</h5>
+                <ul>
+                    <li>Increased profit margin by 135%</li>
+                    <li>Created documentation of process</li>
+                    <li>Created documentation to track project metrics</li>
+                </ul>
+            </article>
+
+            <article class="project">
+                <h3 class="project__title">Joe's Gulp Tasks</h3>
+                <h4 class="project__sub-title">An all-in-one Node Package</h4>
+                <p class="project__description">Joe's Gulp Tasks is an all-in-one node package that I created to assist
+                    in the development of websites for the Tyson Steele account. You can find the package at both npm
+                    and on GitHub. The package is designed to function as a static site generator with a single, simple
+                    approach to configuration (all configuration is exposed through a single .json file).</p>
+                <h5 class="list__title">Features</h5>
+                <ul>
+                    <li>Twig.js templating support</li>
+                    <li>Created documentation of process</li>
+                    <li>Created documentation to track project metrics</li>
+                </ul>
+            </article>
+
+
+        </div>
+    </div>
+</section>
 
 {% include '/meta/foot.twig' %}
