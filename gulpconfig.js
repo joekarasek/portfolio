@@ -19,7 +19,9 @@ module.exports = {
       'src/scss/styles.scss',
     ],
     dependencies: [],
-    includePaths: [],
+    includePaths: [
+      '../_patterns',
+    ],
     dest: 'build/css/',
     dependenciesDest: 'build/css/',
     watchPaths: [
