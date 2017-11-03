@@ -24,14 +24,14 @@
     </div>
 </section>
 
-<section class="section portfolio" id="portfolio">
+<section class="section portfolio section--mint" id="portfolio">
     <div class="container">
         <div class="section__heading">
             <h2 class="section__title">Portfolio</h2>
         </div>
         <div class="section__content">
 
-            <article class="project">
+            <article class="project project--dark">
                 <h3 class="project__title">Tyson Steele</h3>
                 <h4 class="project__sub-title">Developer</h4>
                 <p class="project__description">Tyson Steele does online marketing for hundreds of dentists across the
@@ -47,7 +47,7 @@
                 </ul>
             </article>
 
-            <article class="project">
+            <article class="project project--sage">
                 <h3 class="project__title">Tyson Steele</h3>
                 <h4 class="project__sub-title">Project Manager/Tech Lead</h4>
                 <p class="project__description">Tyson Steele does online marketing for hundreds of dentists across the
@@ -62,7 +62,7 @@
                 </ul>
             </article>
 
-            <article class="project">
+            <article class="project project--fog">
                 <h3 class="project__title">Joe's Gulp Tasks</h3>
                 <h4 class="project__sub-title">Creator/Maintainer</h4>
                 <p class="project__description">Joe's Gulp Tasks is an all-in-one node package static site generator
@@ -80,7 +80,7 @@
                 </ul>
             </article>
 
-            <article class="project">
+            <article class="project project--dark">
                 <h3 class="project__title">Bask Digital Media - Media Planner</h3>
                 <h4 class="project__sub-title">Lead Developer</h4>
                 <p class="project__description">The Media Planner is an internal account tracking system used by Bask
@@ -98,7 +98,7 @@
                 </ul>
             </article>
 
-            <article class="project">
+            <article class="project project--sage">
                 <h3 class="project__title">The House Plan Company</h3>
                 <h4 class="project__sub-title">Developer</h4>
                 <p class="project__description">The House Plan Company is a e-commerce platform for housing blueprints.
@@ -107,7 +107,7 @@
                     building an e-commerce platform in which users can both buy and sell housing blueprints.</p>
             </article>
 
-            <article class="project">
+            <article class="project project--fog">
                 <h3 class="project__title">Zeppidy</h3>
                 <h4 class="project__sub-title">Intern</h4>
                 <p class="project__description">Zeppidy.com was an e-commerce, all-in-one real-estate business. As an
@@ -115,17 +115,17 @@
                     graphically view housing data based on geographic area.</p>
             </article>
 
-            <article class="project">
+            <article class="project project--dark">
                 <h3 class="project__title">Bustle Clone</h3>
                 <h4 class="project__sub-title">Epicodus Project</h4>
                 <p class="project__description">Bustle Clone is an ember.js clone of the popular news site Bustle that was put together over two days of course work at Epicodus.</p>
             </article>
-            
+
         </div>
     </div>
 </section>
 
-<section class="section skills">
+<section class="section skills" id="skills">
     <div class="container">
         <div class="section__heading">
             <h2 class="section__title">Skills/Tools</h2>
@@ -179,5 +179,33 @@
         </div>
     </div>
 </section>
+
+<section class="section contact" id="contact">
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">Contact Me</h2>
+        </div>
+        <div class="section__content">
+            <form action="https://formspree.io/jozin.joe@gmail.com"
+                  method="POST">
+                <input type="text" name="name" placeholde="Your Name">
+                <input type="email" name="_replyto" placeholder="Your email">
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="footer">
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/joe-karasek" class="social-media__link">
+            <i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/joekarasek" class="social-media__link">
+            <i class="fa fa-3x fa-github-square" aria-hidden="true"></i>
+        </a>
+    </div>
+    <p>Copyright 2017</p>
+</footer>
 
 {% include '/meta/foot.twig' %}

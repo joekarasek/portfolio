@@ -1,5 +1,148 @@
 @import "/**/*.scss";
 
+// Colors
+
+$black: #1d1e2c;
+$ash: #5a5a66;
+$fog: #eeffea;
+$lime: #aceb98;
+$mint: #c7f0bd;
+$sage: #a4c2a8;
+
+// Typography
+
+$font-primary: 'PT Sans Narrow', sans-serif;
+$font-copy: 'Roboto', sans-serif;
+
+@mixin font-colors($primary: $black, $secondary: $ash) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $primary;
+  }
+
+  a,
+  p,
+  li,
+  span {
+    color: $secondary;
+  }
+  
+  a:hover {
+    color: darken($secondary, 50%);
+  }
+}
+
+@include font-colors($black, $ash);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+  font-weight: 700;
+}
+
+a,
+p,
+li,
+span {
+  font-family: $font-copy;
+  color: $ash;
+}
+
+
 .btn {
   border: dashed 3px green;
+}
+
+.navbar {
+  border-bottom: 1px solid $ash;
+
+  &-brand {
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  &--sage {
+    background-color: $sage;
+
+    @include font-colors($black, $black);
+  }
+}
+
+.section {
+  padding: 30px 0;
+  border-bottom: 1px solid $ash;
+
+  &__heading {
+    padding: 20px 0 0;
+    margin-bottom: 30px;
+    border-bottom: solid 1px $black;
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &--dark {
+    background-color: $black;
+  }
+
+  &--sage {
+    background-color: $sage;
+  }
+
+  &--mint {
+    background-color: $mint;
+  }
+
+  &--fog {
+    background-color: $fog;
+  }
+}
+
+.project {
+  border-radius: 0px;
+  padding: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+
+  &__sub-title {
+    font-weight: 700;
+  }
+
+  &--dark {
+    background-color: $black;
+
+    @include font-colors($lime, $mint);
+  }
+
+  &--sage {
+    background-color: $sage;
+
+    @include font-colors($black, $ash);
+  }
+
+  &--mint {
+    background-color: $mint;
+
+    @include font-colors($black, $ash);
+  }
+
+  &--fog {
+    background-color: $fog;
+
+    @include font-colors($black, $ash);
+  }
 }

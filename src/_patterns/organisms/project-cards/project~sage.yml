@@ -1,0 +1,9 @@
+project:
+  title: Project Title
+  subtitle: Project Role
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+    deserunt facere harum inventore ipsam ipsum, magnam mollitia nostrum nulla odit
+    perspiciatis praesentium quibusdam quidem repellendus sapiente sit sunt ullam
+    voluptate.
+  classes:
+  - project--sage
