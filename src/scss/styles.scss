@@ -1,5 +1,18 @@
 @import "/**/*.scss";
 
+// Override _Reboot
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+
+
 // Colors
 
 $black: #1d1e2c;
@@ -55,7 +68,6 @@ span {
   font-family: $font-copy;
   color: $ash;
 }
-
 
 .btn {
   border: dashed 3px green;

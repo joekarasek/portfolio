@@ -131,67 +131,99 @@
             <h2 class="section__title">Skills/Tools</h2>
         </div>
         <div class="section__content">
-            <h5 class="list__title">Front End</h5>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3 (BEM, SMACSS)</li>
-                <li>Responsive Design</li>
-                <li>Design Patterns</li>
-                <li>Sketch</li>
-                <li>jQuery</li>
-                <li>Bootstrap</li>
-                <li>Materize</li>
-                <li>Jekyll</li>
-            </ul>
-            <h5 class="list__title">Javascript</h5>
-            <ul>
-                <li>ES5, ES6</li>
-                <li>Node.js</li>
-                <li>Gulp</li>
-                <li>Angular</li>
-                <li>Ember</li>
-                <li>Polymer</li>
-                <li>React</li>
-                <li>Express</li>
-                <li>Rxjs</li>
-                <li>Mustache, Handlebars, Liquid, Twig.js</li>
-            </ul>
-            <h5 class="list__title">PHP</h5>
-            <ul>
-                <li>Drupal 7, Drupal 8</li>
-                <li>Silex</li>
-                <li>Twig</li>
-                <li>Composer</li>
-                <li>Blackfire</li>
-                <li>Xedug</li>
-            </ul>
-            <h5 class="list__title">Other</h5>
-            <ul>
-                <li>MySQL</li>
-                <li>Firebase</li>
-                <li>JIRA</li>
-                <li>Agile</li>
-                <li>Ansible</li>
-                <li>Docker</li>
-                <li>Apache</li>
-                <li>Slack</li>
-            </ul>
+            <div class="row">
+                <div class="col"><h5 class="list__title">Front End</h5>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3 (BEM, SMACSS)</li>
+                        <li>Responsive Design</li>
+                        <li>Design Patterns</li>
+                        <li>Sketch</li>
+                        <li>jQuery</li>
+                        <li>Bootstrap</li>
+                        <li>Materize</li>
+                        <li>Jekyll</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="list__title">Javascript</h5>
+                    <ul>
+                        <li>ES5, ES6</li>
+                        <li>Node.js</li>
+                        <li>Gulp</li>
+                        <li>Angular</li>
+                        <li>Ember</li>
+                        <li>Polymer</li>
+                        <li>React</li>
+                        <li>Express</li>
+                        <li>Rxjs</li>
+                        <li>Mustache, Handlebars, Liquid, Twig.js</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="list__title">PHP</h5>
+                    <ul>
+                        <li>Drupal 7, Drupal 8</li>
+                        <li>Silex</li>
+                        <li>Twig</li>
+                        <li>Composer</li>
+                        <li>Blackfire</li>
+                        <li>Xedug</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="list__title">Other</h5>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>Firebase</li>
+                        <li>JIRA</li>
+                        <li>Agile</li>
+                        <li>Ansible</li>
+                        <li>Docker</li>
+                        <li>Apache</li>
+                        <li>Slack</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="section contact" id="contact">
     <div class="container">
-        <div class="section__header">
+        <div class="section__heading">
             <h2 class="section__title">Contact Me</h2>
         </div>
         <div class="section__content">
-            <form action="https://formspree.io/jozin.joe@gmail.com"
-                  method="POST">
-                <input type="text" name="name" placeholde="Your Name">
-                <input type="email" name="_replyto" placeholder="Your email">
-                <input type="submit" value="Send">
-            </form>
+            <div class="row">
+                <div class="col">
+                    <h3>Email Me!</h3>
+                    <form action="https://formspree.io/jozin.joe@gmail.com"
+                          method="POST" class="row">
+                        <div class="form-group col">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group col">
+                            <label for="email">Email:</label>
+                            <input type="email" name="_replyto" placeholder="Your email">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="textarea">Tell me more...</label>
+                            <textarea name="textarea" placeholder="What would you like to talk about?"></textarea>
+                        </div>
+                        <div class="forg-group col">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <h3>Catch Me on Social Media!</h3>
+                    <h4>LinkedIn</h4>
+                    <h4>Twitter</h4>
+                    <h4>GitHub</h4>
+                </div>
+            </div>
         </div>
     </div>
 </section>
