@@ -15,19 +15,25 @@ textarea {
 
 // Colors
 
-$black: #1d1e2c;
 $ash: #5a5a66;
 $fog: #eeffea;
 $lime: #aceb98;
 $mint: #c7f0bd;
 $sage: #a4c2a8;
 
+$lighter-grey: #d9d9d9;
+$light-grey: #8d8d8d;
+$teal: #2da18a;
+$dark-grey: #333333;
+$black: #000000;
+
+
 // Typography
 
 $font-primary: 'PT Sans Narrow', sans-serif;
 $font-copy: 'Roboto', sans-serif;
 
-@mixin font-colors($primary: $black, $secondary: $ash) {
+@mixin font-colors($primary: $teal, $secondary: $lighter-grey) {
   h1,
   h2,
   h3,
@@ -49,7 +55,7 @@ $font-copy: 'Roboto', sans-serif;
   }
 }
 
-@include font-colors($black, $ash);
+@include font-colors();
 
 h1,
 h2,
@@ -69,6 +75,19 @@ span {
   color: $ash;
 }
 
+ul {
+  padding-left: 20px;
+}
+
+.short-break {
+  border-top: 2px solid #2da18a;
+  width: 150px;
+
+  @media screen and (min-width: 992px) {
+    width: 300px;
+  }
+}
+
 .btn {
   border: dashed 3px green;
 }
@@ -81,80 +100,138 @@ span {
     font-weight: 700;
     font-size: 2rem;
   }
+  &--teal {
+    background-color: $teal;
 
-  &--sage {
-    background-color: $sage;
+    a {
+      color: $black;
+    }
 
-    @include font-colors($black, $black);
+    a:hover {
+      color: $dark-grey;
+    }
   }
 }
 
 .section {
   padding: 30px 0;
-  border-bottom: 1px solid $ash;
+
+  @media screen and (min-width: 992px) {
+    padding: 60px 0;
+  }
 
   &__heading {
-    padding: 20px 0 0;
-    margin-bottom: 30px;
-    border-bottom: solid 1px $black;
+    margin-bottom: 45px;
+    border-bottom: solid 1px $teal;
+    text-shadow: 1px 2px 2px black;
+    letter-spacing: 1.8px;
   }
 
   &__title {
     font-size: 3rem;
-  }
-
-  &__title {
     font-weight: 700;
   }
 
-  &--dark {
+  &--lighter-grey {
+    background-color: $lighter-grey;
+
+    @include font-colors($teal, $dark-grey);
+  }
+
+  &--light-grey {
+    background-color: $light-grey;
+
+    @include font-colors($teal, $dark-grey);
+  }
+
+  &--dark-grey {
+    background-color: $dark-grey;
+
+    @include font-colors($teal, $lighter-grey);
+  }
+
+  &--black {
     background-color: $black;
-  }
 
-  &--sage {
-    background-color: $sage;
+    @include font-colors($teal, $teal);
   }
+}
 
-  &--mint {
-    background-color: $mint;
+.about {
+  &__image {
+    max-width: 300px;
+    margin-right: 15px;
+    margin-bottom: 15px;
   }
+}
 
-  &--fog {
-    background-color: $fog;
+.contact {
+  label {
+    color: $teal;
   }
 }
 
 .project {
   border-radius: 0px;
-  padding: 15px;
-  margin-bottom: 30px;
+  padding: 45px;
+  margin: 45px 0;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+
+  @include font-colors($black, $dark-grey);
+
+  &__title {
+    text-shadow: 1px 2px 2px #000;
+    color: $teal !important;
+    letter-spacing: 1.8px;
+  }
 
   &__sub-title {
     font-weight: 700;
   }
 
-  &--dark {
+  &__thumbnail {
+    max-width: 300px;
+    margin: 0 8px 15px;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.35);
+
+    &--squashed {
+      max-height: 300px;
+
+      @media screen and (min-width: 480px) {
+        max-height: 200px ;
+      }
+
+      @media screen and (min-width: 768px) {
+        max-height: 300px;
+      }
+    }
+  }
+
+  &--lighter-grey {
+    background-color: $lighter-grey;
+  }
+
+  &--light-grey {
+    background-color: $light-grey;
+  }
+
+  &--dark-grey {
+    background-color: $dark-grey;
+  }
+
+  &--black {
     background-color: $black;
-
-    @include font-colors($lime, $mint);
   }
+}
 
-  &--sage {
-    background-color: $sage;
+.tyson-steele-thumbnails {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    @include font-colors($black, $ash);
-  }
-
-  &--mint {
-    background-color: $mint;
-
-    @include font-colors($black, $ash);
-  }
-
-  &--fog {
-    background-color: $fog;
-
-    @include font-colors($black, $ash);
+  @media screen and (min-width: 992px) {
+    display: inherit;
+    width: inherit;
   }
 }
