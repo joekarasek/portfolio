@@ -5,7 +5,7 @@ module.exports = {
     watchFiles: [
         'src/_patterns/**/*.twig'
     ],
-    baseDir: 'build/',
+    baseDir: 'docs/',
     startPath: '/',
     openBrowserAtStart: false,
     // requires above to be true; allows non-default browser to open
@@ -25,8 +25,8 @@ module.exports = {
     includePaths: [
       '../_patterns',
     ],
-    dest: 'build/css/',
-    dependenciesDest: 'build/css/',
+    dest: 'docs/css/',
+    dependenciesDest: 'docs/css/',
     watchPaths: [
       'src/scss/**/*.scss'
     ],
@@ -50,7 +50,7 @@ module.exports = {
   js: {
     enabled: true,
     source: 'src/js/*.js',
-    dest: 'build/js/',
+    dest: 'docs/js/',
     destFileName: 'scripts.js',
     babel: false,
     uglify: false,
@@ -77,7 +77,7 @@ module.exports = {
     sources: [
       'src/index.twig',
     ],
-    dest: 'build/',
+    dest: 'docs/',
     lint: true,
     twig: {
       enabled: true,
@@ -96,6 +96,6 @@ module.exports = {
         'src/**/*.pdf',
         'src/fonts/*.*',
     ],
-    dest: 'build/assets/',
+    dest: 'docs/assets/',
   }
 };
