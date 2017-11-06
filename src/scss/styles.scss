@@ -1,17 +1,5 @@
 @import "/**/*.scss";
 
-// Override _Reboot
-
-label {
-  display: block;
-}
-
-input,
-textarea {
-  width: 100%;
-}
-
-
 
 // Colors
 
@@ -23,10 +11,31 @@ $sage: #a4c2a8;
 
 $lighter-grey: #d9d9d9;
 $light-grey: #8d8d8d;
-$teal: #2da18a;
+$teal: rgb(45, 161, 138);
 $dark-grey: #333333;
 $black: #000000;
 
+
+
+// Override _Reboot
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+input[type="submit"] {
+  background: teal;
+  border: none;
+  width: auto;
+  text-align: center;
+  padding: 10px 25px;
+  color: $lighter-grey;
+}
 
 // Typography
 
@@ -49,13 +58,17 @@ $font-copy: 'Roboto', sans-serif;
   span {
     color: $secondary;
   }
-  
+
   a:hover {
     color: darken($secondary, 50%);
   }
 }
 
 @include font-colors();
+
+h1 {
+  font-size: 4rem;
+}
 
 h1,
 h2,
@@ -93,7 +106,13 @@ ul {
 }
 
 .navbar {
-  border-bottom: 1px solid $ash;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+
+  &-nav {
+    flex-direction: column !important;
+  }
 
   &-brand {
     font-family: $font-primary;
@@ -101,14 +120,24 @@ ul {
     font-size: 2rem;
   }
   &--teal {
-    background-color: $teal;
+    background-color: rgba(45, 161, 138, 0.5);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $teal;
+    }
 
     a {
       color: $black;
+      text-shadow: 2px 1px 1px rgba(110, 110, 110, 0.5);
     }
 
-    a:hover {
+    a:hover,
+    a:focus,
+    a:active {
       color: $dark-grey;
+      text-shadow: 2px 1px 1px rgba(255, 255, 255, 0.5);
+      text-decoration: underline;
     }
   }
 }
@@ -157,6 +186,31 @@ ul {
   }
 }
 
+.marquee {
+  position: relative;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.65)
+    ), url(/assets/computer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  &__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+
+  &__title {
+    text-shadow: 1px 3px 6px black;
+  }
+}
+
 .about {
   &__image {
     max-width: 300px;
@@ -169,11 +223,15 @@ ul {
   label {
     color: $teal;
   }
+
+  form {
+    margin-top: 15px;
+  }
 }
 
 .project {
   border-radius: 0px;
-  padding: 45px;
+  padding: 45px 35px;
   margin: 45px 0;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 
@@ -190,14 +248,16 @@ ul {
   }
 
   &__thumbnail {
-    max-width: 300px;
+    width: 300px;
+    max-width: 100%;
     margin: 0 8px 15px;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.35);
 
     &--squashed {
-      max-height: 300px;
+      max-height: 270px;
+      width: auto;
 
-      @media screen and (min-width: 480px) {
+      @media screen and (min-width: 540px) {
         max-height: 200px ;
       }
 
@@ -234,4 +294,8 @@ ul {
     display: inherit;
     width: inherit;
   }
+}
+
+.social-media-icon {
+  margin: 15px 30px 0;
 }

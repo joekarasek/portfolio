@@ -2,7 +2,9 @@ module.exports = {
   browserSync: {
     enabled: true,
     port: 3050,
-    watchFiles: [],
+    watchFiles: [
+        'src/_patterns/**/*.twig'
+    ],
     baseDir: 'build/',
     startPath: '/',
     openBrowserAtStart: false,
@@ -17,6 +19,7 @@ module.exports = {
     enabled: true,
     source: [
       'src/scss/styles.scss',
+      'src/scss/font-awesome.min.css'
     ],
     dependencies: [],
     includePaths: [
@@ -91,6 +94,7 @@ module.exports = {
     sources: [
         'src/assets/**/*.*',
         'src/**/*.pdf',
+        'src/fonts/*.*',
     ],
     dest: 'build/assets/',
   }

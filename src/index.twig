@@ -1,6 +1,7 @@
 {% include '/meta/head.twig' %}
 
-    {% include '/organisms/navbar/navbar.twig' %}
+
+    {% include '/organisms/marquee/marquee.twig' %}
 
 <section class="section about section--lighter-grey" id="about">
     <div class="container">
@@ -174,7 +175,7 @@
                         <li>Sketch</li>
                         <li>jQuery</li>
                         <li>Bootstrap</li>
-                        <li>Materize</li>
+                        <li>Materialize</li>
                         <li>Jekyll</li>
                     </ul>
                 </div>
@@ -201,7 +202,7 @@
                         <li>Twig</li>
                         <li>Composer</li>
                         <li>Blackfire</li>
-                        <li>Xedug</li>
+                        <li>Xdebug</li>
                     </ul>
                 </div>
                 <div class="col">
@@ -230,7 +231,7 @@
         <div class="section__content">
             <div class="row">
                 <div class="col-sm">
-                    <h3>Email Me!</h3>
+                    <h3>Let's chat...</h3>
                     <form action="https://formspree.io/jozin.joe@gmail.com"
                           method="POST" class="row">
                         <div class="form-group col">
@@ -250,11 +251,20 @@
                         </div>
                     </form>
                 </div>
+                <div class="col-sm-2"></div>
                 <div class="col-sm">
-                    <h3>Catch Me on Social Media!</h3>
-                    <h4>LinkedIn</h4>
-                    <h4>Twitter</h4>
-                    <h4>GitHub</h4>
+                    <h3>... Or Catch Me on Social Media!</h3>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/joe-karasek" class="social-media__link">
+                            <i class="fa fa-3x fa-linkedin-square social-media-icon" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/joekarasek" class="social-media__link">
+                            <i class="fa fa-3x fa-github-square social-media-icon" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/karasek_joe" class="social-media__link">
+                            <i class="fa fa-3x fa-twitter-square social-media-icon" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -262,17 +272,8 @@
 </section>
 
 <footer id="footer" class="footer section section--black">
-    <div class="container center">
+    <div class="container">
         <p>Copyright 2017, All Rights Reserved</p>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/joe-karasek" class="social-media__link">
-                <i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/joekarasek" class="social-media__link">
-                <i class="fa fa-3x fa-github-square" aria-hidden="true"></i>
-            </a>
-        </div>
-
     </div>
 </footer>
 
