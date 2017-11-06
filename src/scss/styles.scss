@@ -213,7 +213,8 @@ ul {
 
 .about {
   &__image {
-    max-width: 300px;
+    width: 300px;
+    max-width: 50%;
     margin-right: 15px;
     margin-bottom: 15px;
   }
