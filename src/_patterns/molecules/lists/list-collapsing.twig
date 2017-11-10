@@ -1,5 +1,5 @@
-<h5 class="list__title {{ classes ? classes|join(' ') : '' }}" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">{{ title }}</h5>
-<ul class="collapse" id="collapseExample">
+<h5 class="list__title {{ classes ? classes|join(' ') : '' }}" data-toggle="collapse" href="#{{ id }}" aria-expanded="false" aria-controls="collapseExample">{{ title }} </h5>
+<ul class="collapse list" id="{{ id }}">
     {% for item in items %}
         <li>{{ item }}</li>
     {% endfor %}

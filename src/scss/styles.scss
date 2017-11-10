@@ -136,7 +136,7 @@ ul {
     a:focus,
     a:active {
       color: $dark-grey;
-      text-shadow: 2px 1px 1px rgba(255, 255, 255, 0.5);
+      text-shadow: 2px 1px 1px rgba(39, 39, 39, 0.2);
       text-decoration: underline;
     }
   }
@@ -228,6 +228,36 @@ ul {
   form {
     margin-bottom: 30px;
     margin-top: 15px;
+  }
+}
+
+.list {
+  li a {
+    color: $teal;
+    text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.51);
+    text-decoration: underline;
+  }
+
+  &__title--collapsing {
+    &::after {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: '\f0d7';
+    }
+
+    &.collapsed::after {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: '\f0da';
+    }
   }
 }
 
