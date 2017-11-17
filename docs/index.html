@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html class="">
 <head>
-    <title>Joe Karasek's Professional Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
     <title>Joe Karasek's Professional Portfolio</title>
     <meta name="description" content="Joe Karasek is a great full stack developer with a passion for design systems"/>
@@ -44,7 +42,7 @@
                 <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills/Tools</a>
+                <a class="nav-link" href="#skills">Frameworks/Tools</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact Me</a>
@@ -54,13 +52,13 @@
 </nav>
 </section>
 
-<section class="section about section--lighter-grey" id="about">
+<section class="section about section--dark-grey" id="about">
     <div class="container">
         <div class="section__heading">
             <h2 class="section__title">About Me</h2>
         </div>
         <div class="section__content">
-            <img src="assets/joe4x4.jpg" alt="Joseph Karasek, stiking developer" class="about__image float-left">
+            <img src="assets/joe4x4.jpg" alt="Joseph Karasek, web developer" class="about__image float-left">
             <p>Hi!</p>
             <p>I'm a full-stack web developer based out of Portland, Oregon. I've built tons of websites and
                 webapps, I strive to write high-quality, professional code, and I love being part of the developer
@@ -74,6 +72,42 @@
                 graphing calculator). I've been building websites and software ever since.</p>
             <p>Checkout some of the work I've done in the projects section, visit my LinkedIn and GitHub pages, and feel
                 free to reach out to me if there is anything I can do for you.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section skills section--lighter-grey">
+    <div class="container">
+        <div class="section__heading">
+            <h2 class="section__title">Skills</h2>
+        </div>
+        <div class="section__content">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="skill">
+                        <h3 class="skill__icon"><i class="fa fa-2x fa-code" aria-hidden="true"></i></h3>
+                        <h3 class="skill__title">Front End</h3>
+                        <h5 class="skill__subtitle">HTML, (S)CSS, Javascript Libraries.</h5>
+                        <p class="skill__copy">I love making beautiful, fully responsive websites and working with modern frameworks like React and Angular. Creating a theme for Drupal? No problem.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="skill">
+                        <h3 class="skill__icon"><i class="fa fa-2x fa-terminal" aria-hidden="true"></i></h3>
+                        <h3 class="skill__title">Back End</h3>
+                        <h5 class="skill__subtitle">Node.js, PHP, MySQL</h5>
+                        <p class="skill__copy">Whether you're using a popular CMS like Drupal or WordPress or working with custom code, I'm ready to jump in and help.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="skill">
+                        <h3 class="skill__icon"><i class="fa fa-2x fa-code-fork" aria-hidden="true"></i></h3>
+                        <h3 class="skill__title">Dev Ops</h3>
+                        <h5 class="skill__subtitle">Gulp, Webpack, JIRA.</h5>
+                        <p class="skill__copy">Good process saves time and money. Whether its streamlining development with Gulp or working with an Agile team, getting things done effectively is a top priority.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -113,23 +147,52 @@
                     websites, hosting the sites on a development server, assuring quality, and delivering the product on
                     a tight schedule (one to two sites per week).</p>
                 <div class="row">
-                    <div class="col-md"><h5 class="list__title">Accomplishments</h5>
+                    <div class="col-md">
+                        <h5 class="list__title">Accomplishments</h5>
                         <ul>
                             <li>Delivered over 60 websites in the course of 15 months</li>
-                            <li>Created development tools to streamline production (see my Joe's Gulp Tools project)</li>
+                            <li>Created development tools to streamline production (see my Joe's Gulp Tools project)
+                            </li>
                             <li>Automated deployment to Webfaction using Python</li>
                             <li>Created a rigorous QA process to assure error free websites</li>
                         </ul>
+                        <h5 class="list__title list__title--collapsing collapsed" data-toggle="collapse" href="#tysonsteelesites" aria-expanded="false" aria-controls="collapseExample">Sample Site Links </h5>
+<ul class="collapse list" id="tysonsteelesites">
+            <li><a href="http://www.maestrodentistry.com/" target="_blank">Dr. Christopher Maestro</a></li>
+            <li><a href="http://www.warwickdentalgroup.com/" target="_blank">Dr. Jack Paquette</a></li>
+            <li><a href="http://www.grantspasssmiles.com/" target="_blank">Dr. George Olfson</a></li>
+            <li><a href="http://www.southsalemdentalcare.com/" target="_blank">Dr. Sean Reisig</a></li>
+            <li><a href="https://www.seattlegeneraldentistry.com/" target="_blank">Dr. Andrew Lewis</a></li>
+            <li><a href="http://www.saxtonsmiles.com/" target="_blank">Dr. Jacob Saxton</a></li>
+            <li><a href="http://www.mydentistinscottsdale.com/" target="_blank">Dr. Thomas Piccolo</a></li>
+    </ul>
+
                     </div>
                     <div class="col-md-auto tyson-steele-thumbnails">
-                        <img src="assets/projects/tyson_steele/casey.png" alt="screen shot of a responsive website created by Joe Karasek" class="project__thumbnail project__thumbnail--squashed">
-                        <img src="assets/projects/tyson_steele/vlk.png" alt="screen shot of a responsive website created by Joe Karasek" class="project__thumbnail project__thumbnail--squashed">
-                        <img src="assets/projects/tyson_steele/lecavalier.png" alt="screen shot of a responsive website created by Joe Karasek" class="project__thumbnail project__thumbnail--squashed">
-                        <img src="assets/projects/tyson_steele/mayes.png" alt="screen shot of a responsive website created by Joe Karasek" class="project__thumbnail project__thumbnail--squashed">
-                        <img src="assets/projects/tyson_steele/howard.png" alt="screen shot of a responsive website created by Joe Karasek" class="project__thumbnail project__thumbnail--squashed">
-                        <img src="assets/projects/tyson_steele/kerber.png" alt="screen shot of a responsive website created by Joe Karasek" class="project__thumbnail project__thumbnail--squashed">
-                        <img src="assets/projects/tyson_steele/lewis.png" alt="screen shot of a responsive website created by Joe Karasek" class="project__thumbnail project__thumbnail--squashed">
-                        <img src="assets/projects/tyson_steele/piccolo.png" alt="screen shot of a responsive website created by Joe Karasek" class="project__thumbnail project__thumbnail--squashed">
+                        <img src="assets/projects/tyson_steele/casey.png"
+                             alt="screen shot of a responsive website created by Joe Karasek"
+                             class="project__thumbnail project__thumbnail--squashed">
+                        <img src="assets/projects/tyson_steele/vlk.png"
+                             alt="screen shot of a responsive website created by Joe Karasek"
+                             class="project__thumbnail project__thumbnail--squashed">
+                        <img src="assets/projects/tyson_steele/lecavalier.png"
+                             alt="screen shot of a responsive website created by Joe Karasek"
+                             class="project__thumbnail project__thumbnail--squashed">
+                        <img src="assets/projects/tyson_steele/mayes.png"
+                             alt="screen shot of a responsive website created by Joe Karasek"
+                             class="project__thumbnail project__thumbnail--squashed">
+                        <img src="assets/projects/tyson_steele/howard.png"
+                             alt="screen shot of a responsive website created by Joe Karasek"
+                             class="project__thumbnail project__thumbnail--squashed">
+                        <img src="assets/projects/tyson_steele/kerber.png"
+                             alt="screen shot of a responsive website created by Joe Karasek"
+                             class="project__thumbnail project__thumbnail--squashed">
+                        <img src="assets/projects/tyson_steele/lewis.png"
+                             alt="screen shot of a responsive website created by Joe Karasek"
+                             class="project__thumbnail project__thumbnail--squashed">
+                        <img src="assets/projects/tyson_steele/piccolo.png"
+                             alt="screen shot of a responsive website created by Joe Karasek"
+                             class="project__thumbnail project__thumbnail--squashed">
                     </div>
                 </div>
             </article>
@@ -157,18 +220,22 @@
                 <h3 class="project__title">Joe's Gulp Tasks</h3>
                 <h4 class="project__sub-title">Creator/Maintainer</h4>
                 <p class="project__description">Joe's Gulp Tasks is an all-in-one node package static site generator
-                    that I created to assist
-                    in the development of websites for the Tyson Steele account. You can find the package at both npm
-                    and on GitHub. The package is designed to function as a static site generator with a single, simple
-                    approach to configuration (all configuration is exposed through a single .json file).</p>
+                    that I created to assist in the development of websites for the Tyson Steele account. You can find
+                    the package at both <a href="https://www.npmjs.com/package/joes-gulp-tasks">npm</a> and on GitHub. The package is designed to function as a static site
+                    generator with a single, simple approach to configuration (all configuration is exposed through a
+                    single .json file).</p>
                 <h5 class="list__title">Features</h5>
                 <ul>
                     <li>Gulp task management</li>
                     <li>Twig.js templating engine</li>
                     <li>SASS/SCSS</li>
                     <li>Linting for Css, Javascript, and HTML</li>
+                    <li>Husky configuration to enforce linting rules</li>
                     <li>BrowserSync for code injection and site refresh</li>
                 </ul>
+                <h5 class="list__title">Links</h5>
+                <a href="https://www.npmjs.com/package/joes-gulp-tasks"><i class="fa fa-code-fork" aria-hidden="true"></i> npm</a><br>
+                <a href="https://github.com/joekarasek/joes-gulp-tasks"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
             </article>
 
             <hr class="short-break">
@@ -197,9 +264,12 @@
                 <p class="project__description">Zeppidy.com was an e-commerce, all-in-one real-estate business. As an
                     intern, I was responsible for building a web component that allowed users to search, filter, and
                     graphically view housing data based on geographic area.</p>
-                <img src="assets/projects/zeppidy/ZMTscreenshot2.png" class="project__thumbnail" alt="Zeppidy Market Tracker">
-                <img src="assets/projects/zeppidy/ZMTscreenshot3.png" class="project__thumbnail" alt="Zeppidy Market Tracker">
-                <img src="assets/projects/zeppidy/ZMTscreenshot4.png" class="project__thumbnail" alt="Zeppidy Market Tracker">
+                <img src="assets/projects/zeppidy/ZMTscreenshot2.png" class="project__thumbnail"
+                     alt="Zeppidy Market Tracker">
+                <img src="assets/projects/zeppidy/ZMTscreenshot3.png" class="project__thumbnail"
+                     alt="Zeppidy Market Tracker">
+                <img src="assets/projects/zeppidy/ZMTscreenshot4.png" class="project__thumbnail"
+                     alt="Zeppidy Market Tracker">
             </article>
 
         </div>
@@ -209,7 +279,7 @@
 <section class="section skills section--lighter-grey" id="skills">
     <div class="container">
         <div class="section__heading">
-            <h2 class="section__title">Skills/Tools</h2>
+            <h2 class="section__title">Frameworks/Tools</h2>
         </div>
         <div class="section__content">
             <div class="row">
@@ -284,11 +354,11 @@
                     <h3>Let's chat...</h3>
                     <form action="https://formspree.io/jozin.joe@gmail.com"
                           method="POST" class="row">
-                        <div class="form-group col">
+                        <div class="form-group col-12 col-sm-6">
                             <label for="name">Name:</label>
                             <input type="text" name="name" placeholder="Name">
                         </div>
-                        <div class="form-group col">
+                        <div class="form-group col-12 col-sm-6">
                             <label for="email">Email:</label>
                             <input type="email" name="_replyto" placeholder="email">
                         </div>

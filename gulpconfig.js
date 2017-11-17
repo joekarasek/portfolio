@@ -1,3 +1,6 @@
+// var buildDir = 'build/';
+var buildDir = 'docs/';
+
 module.exports = {
   browserSync: {
     enabled: true,
@@ -5,7 +8,7 @@ module.exports = {
     watchFiles: [
         'src/_patterns/**/*.twig'
     ],
-    baseDir: 'build/',
+    baseDir: buildDir,
     startPath: '/',
     openBrowserAtStart: false,
     // requires above to be true; allows non-default browser to open
@@ -25,8 +28,8 @@ module.exports = {
     includePaths: [
       '../_patterns',
     ],
-    dest: 'build/css/',
-    dependenciesDest: 'build/css/',
+    dest: buildDir + 'css/',
+    dependenciesDest: buildDir + 'css/',
     watchPaths: [
       'src/scss/**/*.scss'
     ],
@@ -50,7 +53,7 @@ module.exports = {
   js: {
     enabled: true,
     source: 'src/js/*.js',
-    dest: 'build/js/',
+    dest: buildDir + 'js/',
     destFileName: 'scripts.js',
     babel: false,
     uglify: false,
@@ -77,7 +80,7 @@ module.exports = {
     sources: [
       'src/index.twig',
     ],
-    dest: 'build/',
+    dest: buildDir,
     lint: true,
     twig: {
       enabled: true,
@@ -96,6 +99,6 @@ module.exports = {
         'src/**/*.pdf',
         'src/fonts/*.*',
     ],
-    dest: 'build/assets/',
+    dest: buildDir + 'assets/',
   }
 };
