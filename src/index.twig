@@ -35,19 +35,28 @@
         <div class="section__content">
             <div class="row">
                 <div class="col-sm-4">
-                    <h3 class="skills__title">Front End</h3>
-                    <h5>HTML, (S)CSS, Javascript Libraries.</h5>
-                    <p>I love making beautiful, fully responsive websites and working with modern frameworks like React and Angular. Creating a theme for Drupal? No problem.</p>
+                    <div class="skill">
+                        <h3 class="skill__icon"><i class="fa fa-2x fa-code" aria-hidden="true"></i></h3>
+                        <h3 class="skill__title">Front End</h3>
+                        <h5 class="skill__subtitle">HTML, (S)CSS, Javascript Libraries.</h5>
+                        <p class="skill__copy">I love making beautiful, fully responsive websites and working with modern frameworks like React and Angular. Creating a theme for Drupal? No problem.</p>
+                    </div>
                 </div>
                 <div class="col-sm-4">
-                    <h3 class="skills__title">Back End</h3>
-                    <h5>Node.js, PHP, MySQL</h5>
-                    <p>Whether you're using a popular CMS like Drupal or WordPress or working with custom code, I'm ready to jump in and help.</p>
+                    <div class="skill">
+                        <h3 class="skill__icon"><i class="fa fa-2x fa-terminal" aria-hidden="true"></i></h3>
+                        <h3 class="skill__title">Back End</h3>
+                        <h5 class="skill__subtitle">Node.js, PHP, MySQL</h5>
+                        <p class="skill__copy">Whether you're using a popular CMS like Drupal or WordPress or working with custom code, I'm ready to jump in and help.</p>
+                    </div>
                 </div>
                 <div class="col-sm-4">
-                    <h3 class="skills__title">Dev Ops</h3>
-                    <h5>Gulp, Webpack, JIRA.</h5>
-                    <p>Good process saves time and money. Whether its streamlining development with Gulp or working with an Agile team, getting things done effectively is a top priority.</p>
+                    <div class="skill">
+                        <h3 class="skill__icon"><i class="fa fa-2x fa-code-fork" aria-hidden="true"></i></h3>
+                        <h3 class="skill__title">Dev Ops</h3>
+                        <h5 class="skill__subtitle">Gulp, Webpack, JIRA.</h5>
+                        <p class="skill__copy">Good process saves time and money. Whether its streamlining development with Gulp or working with an Agile team, getting things done effectively is a top priority.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,7 +108,7 @@
                             <li>Created a rigorous QA process to assure error free websites</li>
                         </ul>
                         {% include 'molecules/lists/list-collapsing.twig' with {
-                        title: 'Some Sample Sites',
+                        title: 'Sample Site Links',
                         id: 'tysonsteelesites',
                         classes: ['list__title--collapsing', 'collapsed'],
                         items: [

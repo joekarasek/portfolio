@@ -261,6 +261,38 @@ ul {
   }
 }
 
+.skill {
+  text-align: center;
+
+  &__title {
+    color: $black !important;
+    text-align: left;
+  }
+
+  &__subtitle {
+    text-align: left;
+  }
+
+  &__copy {
+    text-align: left;
+  }
+
+  &__icon {
+    margin: 20px auto 50px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-grey;
+    transform: rotate(45deg);
+
+    i {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
 .project {
   border-radius: 0px;
   padding: 45px 35px;
