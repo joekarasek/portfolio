@@ -4,19 +4,15 @@
   "description": "A porffolio of Joe Karasek's software and web development work",
   "main": "index.html",
   "dependencies": {
-    "@theme-tools/plugin-pattern-lab-php": "^0.5.1",
-    "htmlhint": "^0.9.13"
+    "@theme-tools/plugin-pattern-lab-php": "^0.5.1"
   },
   "devDependencies": {
     "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-purifycss": "^0.2.0",
-    "htmlhint": "^0.9.13",
-    "husky": "^0.13.4",
     "joes-gulp-tasks": "^0.5.0-0"
   },
   "scripts": {
     "precommit": "npm test",
-    "test": "stylelint src/scss/**/*.scss && htmlhint build/*.html",
+    "test": "stylelint src/scss/**/*.scss",
     "start": "gulp",
     "gulp": "gulp --tasks && gulp",
     "gulp:tasks": "gulp --tasks",
