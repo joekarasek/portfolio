@@ -1,5 +1,5 @@
 // var buildDir = 'build/';
-var buildDir = 'docs/';
+var buildDir = 'build/';
 
 module.exports = {
   browserSync: {

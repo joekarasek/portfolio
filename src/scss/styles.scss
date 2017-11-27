@@ -88,6 +88,10 @@ span {
   color: $ash;
 }
 
+p {
+  text-align: justify;
+}
+
 ul {
   padding-left: 20px;
 }
@@ -274,11 +278,11 @@ ul {
   }
 
   &__copy {
-    text-align: left;
+    text-align: justify;
   }
 
   &__icon {
-    margin: 20px auto 50px;
+    margin: 50px auto 40px;
     width: 100px;
     height: 100px;
     display: flex;
@@ -314,7 +318,7 @@ ul {
   &__thumbnail {
     width: 300px;
     max-width: 100%;
-    margin: 0 8px 15px;
+    margin: 0 10px 15px 0;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.35);
 
     &--squashed {

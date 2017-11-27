@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "gulp": "github:gulpjs/gulp#4.0",
-    "joes-gulp-tasks": "^0.5.0-0"
+    "joes-gulp-tasks": "^0.5.3"
   },
   "scripts": {
     "precommit": "npm test",

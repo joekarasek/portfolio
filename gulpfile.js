@@ -44,17 +44,6 @@ tasks.watch.push(plTasks.watch);
 // See the readme for further instructions on adding your own commands.
 
 // Add custom tasks here
-
-
-var purify = require('gulp-purifycss');
-
-gulp.task('purifycss', function() {
-  return gulp.src('./build/css/custom.css')
-      .pipe(purify(['./build/js/*.js', './build/*.html']))
-      .pipe(gulp.dest('./build/css'));
-});
-
-
 // ========================
 // End Custom Tasks
 // ========================
